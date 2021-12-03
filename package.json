@@ -1,0 +1,35 @@
+{
+  "name": "projeto_16_api_sing_me_a_song",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV='production' npx nodemon ./src/server.js",
+    "dev": "NODE_ENV='dev' npx nodemon ./src/server.js",
+    "test": "NODE_ENV='test' npx jest -i --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.2",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "get-video-id": "^3.4.3",
+    "jest": "^27.4.2",
+    "pg": "^8.7.1",
+    "request": "^2.88.2",
+    "youtube-validate": "^1.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "prettier": "2.5.0"
+  }
+}
