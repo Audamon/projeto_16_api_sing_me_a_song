@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.post('/recommendations', recommendationsController.recommendations);
+app.post('/recommendations', recommendationsController.createRecommendations);
 
 app.post('/recommendations/:id/upvote', upVoteController.upVote);
 
