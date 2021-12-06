@@ -45,7 +45,7 @@ describe('POST recommendations', () => {
   });
 });
 
-describe('GET recomendations', () => {
+describe('GET recomendationsTop', () => {
   test('should return an object', async () => {
     jest
       .spyOn(recommendationsTopRepository, 'recommendationsTop')
