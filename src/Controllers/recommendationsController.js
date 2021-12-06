@@ -5,7 +5,7 @@ async function createRecommendations(req, res) {
   if (!name || !youtubeLink) return res.sendStatus(400);
   try {
     const recommendations = await createRecommendationsService.createRecommendations({ youtubeLink, name });
-    if (!recommendations) return res.sendStatus(400);
+    if (recommendations === null) return res.sendStatus(400);
     return res.sendStatus(201);
   } catch (error) {
     return res.sendStatus(500);
