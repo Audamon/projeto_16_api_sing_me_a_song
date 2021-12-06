@@ -1,7 +1,7 @@
 import * as recommendationsRandomRepository from '../Repositories/recommendationRandomRepository.js';
 
-async function getRecomendationRandom({ limit }) {
-  console.log(2);
+async function getRecomendationRandom() {
+  const limit = Math.random() > 0.7 ? '<=10' : '>10';
   let video = await recommendationsRandomRepository.getRecomendationRandom({
     limit,
   });
