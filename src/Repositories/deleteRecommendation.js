@@ -1,6 +1,6 @@
 import connection from '../database.js';
 
-async function deleteRecommendation() {
-  await connection.query('delete from video where votes = -5;');
+async function deleteRecommendation({idRecommendation}) {
+  await connection.query('delete from video where id = $1;', [idRecommendation]);
 }
 export { deleteRecommendation };

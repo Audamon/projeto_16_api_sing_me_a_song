@@ -13,14 +13,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.16.4",
-    "@babel/preset-env": "^7.16.4",
-    "babel-jest": "^27.4.2",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "get-video-id": "^3.4.3",
-    "jest": "^27.4.2",
     "pg": "^8.7.1",
     "request": "^2.88.2",
     "youtube-validate": "^1.2.4"
@@ -30,6 +26,10 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "^2.25.3",
+    "@babel/plugin-transform-runtime": "^7.16.4",
+    "@babel/preset-env": "^7.16.4",
+    "babel-jest": "^27.4.2",
+    "jest": "^27.4.2",
     "prettier": "2.5.0"
   }
 }

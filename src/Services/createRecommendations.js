@@ -9,6 +9,7 @@ async function createRecommendations({ youtubeLink, name }) {
     return null;
   }
   const recomendations = await recommendationsRepository.createRecommendations({ youtubeLink, name });
+  console.log(recomendations);
   return recomendations;
 }
 export { createRecommendations };
